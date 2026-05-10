@@ -1,60 +1,192 @@
-!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Personal Profile</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container{
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2{
+            color: #34495e;
+            margin-top: 30px;
+        }
+
+        p{
+            line-height: 1.7;
+        }
+
+        ul{
+            background: #eef3f7;
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+
+        li{
+            margin: 8px 0;
+        }
+
+        img{
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td{
+            border: 1px solid #ccc;
+        }
+
+        th{
+            background: #2c3e50;
+            color: white;
+        }
+
+        th, td{
+            padding: 12px;
+            text-align: center;
+        }
+
+        a{
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: #ff6600;
+        }
+
+        .links a{
+            display: block;
+            margin: 10px 0;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue; font-family: Arial;">
-    <h1 style="color: darkblue;">My Personal Profile</h1>
-    <h2>About Me</h2>
-    <p>Hello! My name is Mehak Nisar. I am a CSC101 student. I am learning HTML in my computer science lab.</p>
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Photography</li>
-        <li>badminton</li>
-        <li>Gaming</li>
-        <li>Learning about computers</li>
-    </ul>
-    <h2>My Favorite Subjects</h2>
-    <ol>
-        <li>Computer Science</li>
-        <li>Chemistry</li>
-        <li>English</li>
-    </ol>
-    <h2>My Favorite Website</h2>
-    <p>
-        Visit my favorite website:
-       https://www.khanacademy.orgKhan Academy</a>
-    </p>
-    <h2>My Picture</h2>
-    <img 
-  src="https://i0.wp.com/www.skyetravels.com/wp-content/uploads/2020/07/edinburgh-1969709_1920.jpg" 
-  alt="Edinburgh City" 
-  width="100%" 
-/>
-    <h2>My Academic Information</h2>
-    <table border="1">
-        <tr>
-            <th>Field</th>
-            <th>Information</th>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td>Mehak Nisar</td>
-        </tr>
-        <tr>
-            <td>Course</td>
-            <td>CSC101</td>
-        </tr>
-        <tr>
-            <td>Program</td>
-            <td>BS Computer Science</td>
-        </tr>
-        <tr>
-            <td>Semester</td>
-            <td>1st Semester</td>
-        </tr>
-    </table>
-    <h2>My Future Goal</h2>
-    <p>My goal is to become a skilled software developer and build useful applications.</p>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Mehak Nisar</h1>
+
+        <!-- Introduction -->
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Mehak Nisar. I am a student of Electronics and
+            Computing with a strong interest in technology and innovation.
+            I enjoy learning new skills, exploring creative ideas, and improving
+            my knowledge in computing and electronics.
+        </p>
+
+        <!-- Hobbies -->
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Photography</li>
+            <li>Traveling</li>
+            <li>Watching Tech Videos</li>
+            <li>Reading Books</li>
+        </ul>
+
+        <!-- Favorite Subjects -->
+        <h2>Favorite Subjects</h2>
+        <ul>
+            <li>Programming Fundamentals</li>
+            <li>Electronics</li>
+            <li>Computer Systems</li>
+            <li>Mathematics</li>
+        </ul>
+
+        <!-- Working Links -->
+        <h2>My Working Links</h2>
+
+        <div class="links">
+            <a href="https://github.com/CSC101-MehakNisar-SP2026" target="_blank">
+                My GitHub Repository
+            </a>
+
+            <a href="https://www.linkedin.com/in/mehak-nisar-9582a8405/" target="_blank">
+                My LinkedIn Profile
+            </a>
+        </div>
+
+        <p>
+            <strong>Discord Username:</strong> mehaknisar_cui
+        </p>
+
+        <!-- Image -->
+        <h2>My Image</h2>
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop" alt="Profile Image">
+
+        <!-- Academic Information Table -->
+        <h2>Academic Information</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Program</th>
+                <th>Semester</th>
+            </tr>
+
+            <tr>
+                <td>Mehak Nisar</td>
+                <td>CSC101</td>
+                <td>Electronics and Computing</td>
+                <td>2nd Semester</td>
+            </tr>
+        </table>
+
+        <!-- Future Goal -->
+        <h2>Future Goal</h2>
+        <p>
+            My future goal is to become a successful technology professional and
+            contribute to innovative projects in the field of electronics and
+            computing. I want to continue learning advanced technologies and
+            develop skills that can help solve real-world problems.
+        </p>
+
+        <div class="footer">
+            <p>© 2026 My Personal Profile Webpage</p>
+        </div>
+
+    </div>
+
 </body>
 </html>
